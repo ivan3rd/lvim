@@ -1,0 +1,5 @@
+{
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.diagnoscticMode": "workspace",
+    "python.analysis.useLibraryCodeForTypes": true
+}

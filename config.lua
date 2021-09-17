@@ -5,15 +5,22 @@ lvim.colorscheme = "gruvbox"
 
 -- vim options
 vim.opt.relativenumber = true
-vim.opt.smartindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.expandtab = true
-vim.opt.autoindent = true
 vim.opt.hlsearch = true
--- vim.opt.tabstop = 4
--- vim.opt.softtabstop = 4
--- vim.opt.shiftwidth = 4
+-- vim.opt.autoindent = true
+-- vim.opt.smartindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+lvim.autocommands.custom_groups = {
+  { "BufEnter", "*.ts", "setlocal tabstop=2 shiftwidth=2 softtabstop=2" },
+  { "BufEnter", "*.js", "setlocal tabstop=2 shiftwidth=2 softtabstop=2" },
+  { "BufEnter", "*.vue", "setlocal tabstop=2 shiftwidth=2 softtabstop=2" },
+  { "BufEnter", "*.html", "setlocal tabstop=2 shiftwidth=2 softtabstop=2" },
+  { "BufEnter", "*.css", "setlocal tabstop=2 shiftwidth=2 softtabstop=2" },
+}
 vim.opt.scrolloff = 8
 vim.opt.fileformat = "unix"
 vim.opt.encoding = "utf-8"
@@ -33,7 +40,8 @@ lvim.keys.insert_mode["<C-h>"] = "<left>"
 lvim.keys.insert_mode["<C-j>"] = "<down>"
 lvim.keys.insert_mode["<C-k>"] = "<up>"
 lvim.keys.insert_mode["<C-l>"] = "<right>"
-lvim.keys.normal_mode["y"] = "y" -- must fix vim-fugitive stupid key bindings
+lvim.keys.normal_mode["y"] = '"*y' -- must fix vim-fugitive stupid key bindings
+lvim.keys.normal_mode["p"] = '"*p'
 -- lvim.line_wrap_cursor_movement = true
 -- unmp a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
@@ -71,6 +79,7 @@ lvim.builtin.which_key.mappings["S"] = {
   R = {"<Cmd>Telescope registers<CR>", "Registers"},
 }
 lvim.builtin.which_key.mappings.g.l = { "<cmd>lua require 'gitsigns'.blame_line(true)<cr>", "Blame"}
+lvim.builtin.which_key.mappings.g.S = {  "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk"}
 lvim.builtin.which_key.mappings["t"] = {
   name = "+Trouble",
   r = { "<cmd>Trouble lsp_references<cr>", "References" },
@@ -80,6 +89,7 @@ lvim.builtin.which_key.mappings["t"] = {
   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 }
+lvim.builtin.which_key.mappings["-"] = {"<cmd>call switch#Switch()<CR>", "Switch"}
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -169,6 +179,3 @@ lvim.autocommands._general_settings = {
   { "TextYankPost","*", "lua require('vim.highlight').on_yank({higroup = 'Search', timeout = 1000})"},
 }
 
-lvim.autocommands.custom_groups = {
-  {"BufWinEnter", "*", ""}
-}

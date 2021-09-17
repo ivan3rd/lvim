@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/ivan/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/ivan/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/ivan/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/ivan/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/ivan/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/user/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/user/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/user/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/user/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/user/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,81 +71,85 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["DAPInstall.nvim"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/DAPInstall.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/DAPInstall.nvim"
   },
   ["FixCursorHold.nvim"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/FixCursorHold.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/FixCursorHold.nvim"
   },
   LuaSnip = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/LuaSnip"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/LuaSnip"
   },
   ["barbar.nvim"] = {
     config = { "\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20core.bufferline\frequire\0" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/barbar.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/barbar.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/cmp-buffer"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/cmp-buffer"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/cmp-nvim-lsp"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/cmp-nvim-lsp"
   },
   ["cmp-nvim-lua"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/cmp-nvim-lua"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/cmp-nvim-lua"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/cmp-path"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/cmp-path"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/cmp_luasnip"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/cmp_luasnip"
   },
   ["dashboard-nvim"] = {
     config = { "\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19core.dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/dashboard-nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/dashboard-nvim"
+  },
+  delimitMate = {
+    loaded = true,
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/delimitMate"
   },
   ["friendly-snippets"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/friendly-snippets"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/friendly-snippets"
   },
   ["gitsigns.nvim"] = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18core.gitsigns\frequire\0" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/gitsigns.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/gitsigns.nvim"
   },
   gruvbox = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/gruvbox"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/gruvbox"
   },
   ["lualine.nvim"] = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17core.lualine\frequire\0" },
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/lualine.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/lualine.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/nlsp-settings.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/nlsp-settings.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/null-ls.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19core.autopairs\frequire\0" },
     load_after = {},
     loaded = true,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/nvim-autopairs"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     after = { "nvim-autopairs" },
@@ -156,110 +160,98 @@ _G.packer_plugins = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17core.comment\frequire\0" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/nvim-comment"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/nvim-comment"
   },
   ["nvim-dap"] = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rcore.dap\frequire\0" },
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/nvim-dap"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["nvim-lspinstall"] = {
     config = { "\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\1K\0\1\0\nsetup\20core.lspinstall\frequire\0" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/nvim-lspinstall"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/nvim-lspinstall"
   },
   ["nvim-tree.lua"] = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18core.nvimtree\frequire\0" },
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     config = { "\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20core.treesitter\frequire\0" },
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/nvim-treesitter"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-ts-autotag"] = {
     config = { "\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20nvim-ts-autotag\frequire\0" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/nvim-ts-autotag"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/packer.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/plenary.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/popup.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/popup.nvim"
   },
   ["project.nvim"] = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17core.project\frequire\0" },
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/project.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/project.nvim"
   },
   ["switch.vim"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/switch.vim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/switch.vim"
   },
   ["telescope.nvim"] = {
     config = { "\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19core.telescope\frequire\0" },
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/telescope.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18core.terminal\frequire\0" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/toggleterm.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/toggleterm.nvim"
   },
   ["trouble.nvim"] = {
     commands = { "TroubleToggle" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/trouble.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/trouble.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/start/vim-fugitive"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/start/vim-fugitive"
   },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19core.which-key\frequire\0" },
     loaded = false,
     needs_bufread = false,
-    path = "/home/ivan/.local/share/lunarvim/site/pack/packer/opt/which-key.nvim"
+    path = "/Users/user/.local/share/lunarvim/site/pack/packer/opt/which-key.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-dap
-time([[Config for nvim-dap]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rcore.dap\frequire\0", "config", "nvim-dap")
-time([[Config for nvim-dap]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19core.telescope\frequire\0", "config", "telescope.nvim")
-time([[Config for telescope.nvim]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17core.lualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20core.treesitter\frequire\0", "config", "nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rcore.cmp\frequire\0", "config", "nvim-cmp")
+time([[Config for nvim-cmp]], false)
 -- Config for: project.nvim
 time([[Config for project.nvim]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17core.project\frequire\0", "config", "project.nvim")
@@ -268,10 +260,22 @@ time([[Config for project.nvim]], false)
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18core.nvimtree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: nvim-cmp
-time([[Config for nvim-cmp]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rcore.cmp\frequire\0", "config", "nvim-cmp")
-time([[Config for nvim-cmp]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19core.telescope\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17core.lualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: nvim-dap
+time([[Config for nvim-dap]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rcore.dap\frequire\0", "config", "nvim-dap")
+time([[Config for nvim-dap]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20core.treesitter\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-autopairs ]]
@@ -291,9 +295,9 @@ vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
 vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-lspinstall'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'nvim-ts-autotag'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufWinEnter * ++once lua require("packer.load")({'barbar.nvim', 'which-key.nvim', 'dashboard-nvim', 'toggleterm.nvim'}, { event = "BufWinEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufWinEnter * ++once lua require("packer.load")({'which-key.nvim', 'dashboard-nvim', 'barbar.nvim', 'toggleterm.nvim'}, { event = "BufWinEnter *" }, _G.packer_plugins)]]
 vim.cmd [[au BufRead * ++once lua require("packer.load")({'gitsigns.nvim', 'nvim-comment'}, { event = "BufRead *" }, _G.packer_plugins)]]
+vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'nvim-ts-autotag'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end
